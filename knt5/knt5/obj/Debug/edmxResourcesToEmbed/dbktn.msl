@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbktnModelStoreContainer" CdmEntityContainer="dbktnEntities">
+    <EntitySetMapping Name="Object">
+      <EntityTypeMapping TypeName="dbktnModel.Object">
+        <MappingFragment StoreEntitySet="Object">
+          <ScalarProperty Name="oId" ColumnName="oId" />
+          <ScalarProperty Name="oName" ColumnName="oName" />
+          <ScalarProperty Name="oPhoto" ColumnName="oPhoto" />
+          <ScalarProperty Name="oNumber" ColumnName="oNumber" />
+          <ScalarProperty Name="oIntro" ColumnName="oIntro" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbktnModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Object">
+    <Key>
+      <PropertyRef Name="oId" />
+    </Key>
+    <Property Name="oId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="oName" Type="nvarchar" MaxLength="50" />
+    <Property Name="oPhoto" Type="nvarchar(max)" />
+    <Property Name="oNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="oIntro" Type="nvarchar(max)" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="dbktnModelStoreContainer">
+    <EntitySet Name="Object" EntityType="Self.Object" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
