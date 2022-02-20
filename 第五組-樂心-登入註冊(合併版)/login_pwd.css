@@ -1,0 +1,62 @@
+.forget1 {
+    font-family: 'Noto Sans TC', sans-serif,system,'Inter', sans-serif,'Noto Sans TC', sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+    /* background: linear-gradient(45deg, rgba(19,25,31,1) 0%, rgba(38,51,64,1) 100%); */
+    background: rgb(235, 235, 235);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forget2 {
+    /* flex-grow: 1; */
+    max-width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: none;
+    background: #fff;
+    box-shadow: 0px 6px 60px 0px rgba(38, 51, 64, 0.08);
+    border: none;
+    border-radius: 6px;
+    padding: 50px 60px;
+}
+
+.form-group {
+    outline-style: none ;
+    border-radius: 3px;
+    padding: 6px 6px;
+    margin: 2px 0;
+    width: 280px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif,'Noto Sans TC', sans-serif;
+}
+
+.helper-text {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: lighten(#717e88, 15%);
+}
+
+.sub {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 14px 40px;
+    min-width: 280px;
+    border: none;
+    border-radius: 30px;
+    background: #905ca2;
+    margin-top: 30px;
+    color:white;
+}
+
+.sub:hover {
+    background-color: #5f1985;
+    color:white;
+}

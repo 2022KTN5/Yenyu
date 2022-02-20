@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="navbar.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <header class="navbar-header">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./images/LOGO.png" alt="" width="300px" />
+          </div>
+          <nav class="navbar-nav">
+            <div class="dropdown">
+              <div class="activity">
+                <a href="#">公益活動<i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="#">公益活動</a></li>
+                  <li><a href="#">數位發票箱</a></li>
+                  <li><a href="#">愛心捐款</a></li>
+                </ul>
+              </div>
+              <div class="invoice">
+                <a href="#">公益捐贈<i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="#">物資捐贈</a></li>
+                </ul>
+              </div>
+              <a href="#">愛心餐廳</a>
+              <a href="#">捐血地圖</a>
+            </div>
+          </nav>
+          <div class="buttons">
+            <!-- <div class="login btn"><a href="#">會員登入</a></div> -->
+            <button class="login btn" id="myBtn1">會員登入</button>
+            
+            <!-- <div class="register btn"><a href="#">註冊</a></div> -->
+            <button class="register btn" id="myBtn2">註冊</button>
+          </div>
+      </div>
+      </header>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal1">
+    
+      <!-- Modal content -->
+      <div class="modal1-content">
+
+        <div class="well">
+          <h2>登入</h2>
+          <br>
+          
+          <!-- ... -->
+          <form class="form-User" action="#" method="get">
+              
+              <div class="form-group">
+                  <input type="email" class="form-control" name="account" value="" placeholder="信箱帳號" required>
+              </div>
+              
+              <div class="form-group">
+                  <input type="password" class="form-control" name="password" value="" panel placeholder="密碼" id="pwd-0" maxlength="12" required>
+              </div>
+              <div class="pwd">
+                  <div class="pwd-forget">
+                      <a href="login_pwd.html" style="color: #5f1985;">忘記密碼?</a>
+                  </div>
+  
+                  <div class="pwd-text">
+                      <input type="checkbox"  onclick="myFunction()">  顯示密碼
+                  </div>
+              </div>
+              
+              <div >
+                  <input type="submit" class="sub btn" value="登入">
+              </div>
+  
+          </form>
+  
+          <p class="helper-text">——————  使用第三方登入  ——————</p>
+          <div class="icons">
+              <div class="btn-icon">
+                  <input type="image" img src="images/Facebook_icon.svg" width="50" height="50" alt="">
+              </div>
+  
+              <div class="btn-icon">
+                  <input type="image" img src="images/Google_icon.svg" width="50" height="50" alt="">
+              </div>
+          </div>
+          <!-- <p class="helper-text">還沒有樂心帳號? <a href="Sign-up.html" style="color: #5f1985;">註冊帳號</a></p> -->
+      </div>
+      </div>
+    
+    </div>
+    
+    
+    <!-- The Modal -->
+    <div id="myModal2" class="modal2">
+    
+      <!-- Modal content -->
+      <div class="modal2-content">
+        
+        <div class="well">
+          <h2>註冊</h2>
+          <br>
+          <div class="tabs">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">一般會員</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">公益團體</button>
+                  </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <!-- ... -->
+                      <form class="form-User" action="#" method="get">
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="name" value="" placeholder="姓名" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <input type="email" class="form-control" name="account" value="" placeholder="註冊信箱" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <input type="password" class="form-control" name="password" value=""panel placeholder="密碼" id="pwd-1" maxlength="12" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <input type="password" class="form-control" name="password" value=""panel placeholder="確認密碼" id="pwd-2" maxlength="12" required>
+                          </div>
+  
+                          <div class="pwd-text2">
+                              <input type="checkbox"  onclick="myFunction()">  顯示密碼
+                          </div>
+  
+                          <div >
+                            <input type="submit" class="sub btn" value="註冊">
+                          </div>
+      
+                      </form>
+  
+                      <p class="helper-text">——————  使用第三方註冊  ——————</p>
+                      <div class="icons">
+                          <div class="btn-icon">
+                              <input type="image" img src="images/Facebook_icon.svg" width="50" height="50" alt="">
+                          </div>
+  
+                          <div class="btn-icon">
+                              <input type="image" img src="images/Google_icon.svg" width="50" height="50" alt="">
+                          </div>
+                      </div>
+                      <!-- <p class="helper-text">已有樂心帳號 <a href="Sign-in.html" style="color: #5f1985;">直接登入</a></p> -->
+                  </div>
+  
+                  
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <!-- ... -->
+                      <form class="form-Charity-Member" action="#" method="get">
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="charity-name" value="" placeholder="單位名" required>
+                          </div>
+                      
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="name" value="" placeholder="負責人" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <input type="email" class="form-control" name="account" value="" placeholder="註冊信箱" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <input type="password" class="form-control" name="password" value=""panel placeholder="密碼" id="pwd-3" maxlength="12" required>
+                          </div>
+                          
+                          <div class="form-group">
+                              <input type="password" class="form-control" name="password" value=""panel placeholder="確認密碼" id="pwd-4" maxlength="12" required>
+                          </div>
+  
+                          <div class="pwd-text2">
+                              <input type="checkbox"  onclick="myFunction()">  顯示密碼
+                          </div>
+  
+                          <div >
+                            <input type="submit" class="sub btn" value="註冊">
+                          </div>
+                      </form>
+  
+                      <p class="helper-text">——————  使用第三方註冊  ——————</p>
+                      <div class="icons">
+                          <div class="btn-icon">
+                              <input type="image" img src="images/Facebook_icon.svg" width="50" height="50" alt="">
+                          </div>
+                          <div class="btn-icon">
+                              <input type="image" img src="images/Google_icon.svg" width="50" height="50" alt="">
+                          </div>
+                      </div>
+                      <!-- <p class="helper-text">已有樂心帳號 <a href="Sign-in.html" style="color: #5f1985;">直接登入</a></p> -->
+                  </div>
+              </div>    
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+
+
+    <script src="navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
