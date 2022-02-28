@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object-Store</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="Object-Store.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="navbar-header">
+        <div class="wrapper">
+          <div class="logo">
+            <img src="./images/LOGO.png" alt="" width="300px" />
+          </div>
+          <nav class="navbar-nav">
+            <div class="dropdown">
+              <div class="activity">
+                <a href="#">公益活動<i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="#">公益活動</a></li>
+                  <li><a href="#">數位發票箱</a></li>
+                  <li><a href="#">愛心捐款</a></li>
+                </ul>
+              </div>
+              <div class="invoice">
+                <a href="#">公益捐贈<i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                  <li><a href="#">物資捐贈</a></li>
+                </ul>
+              </div>
+              <a href="#">愛心餐廳</a>
+              <a href="#">捐血地圖</a>
+            </div>
+          </nav>
+          <div class="buttons">
+            <div class="login btn"><a href="#">會員登入</a></div>
+            <div class="register btn"><a href="#">註冊</a></div>
+          </div>
+      </div>
+      </header>
+      
+      <section class="object-store">
+        <div class="container p-5">
+            
+            <div class="d-flex">
+                <div class="col-6" style="height: 60px;">
+                    <h3 class="mb-3" style="font-weight:bold; color: #5f1985;">物資管理</h3>
+                </div>
+                <div class="col-6" style="height: 60px;">
+
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="col-6" style="height: 60px;">
+                    <div class="wrap">
+                        <div class="search">
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="搜尋">
+                            <button class="search-btn"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" style="height: 60px;">
+                    <div class="det-line">
+                        <button type="button" class="create-btn" onClick="location.href='Object-Create.html'">
+                            <i class="fa-solid fa-plus"></i>&nbsp;建立
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="d-flex">
+                <table class="table align-middle">
+                    <thead class="table-dark">
+                    <tr class="table-head">
+                        <th scope="col">編號</th>
+                        <th scope="col">品名</th>
+                        <th scope="col">照片</th>
+                        <th scope="col">需求數量</th>
+                        <th scope="col">需求說明</th>
+                        <th scope="col">類別</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="list">
+                        <th scope="row" class="o-id">1</th>
+                        <td class="o-Name">學習工具書</td>
+                        <td><input type="image" img src="images/文具_學習工具書.jpg" width="100" height="100" alt=""></td>
+                        <td class="o-Number">25本</td>
+                        <td class="o-type">讓孩子藉由閱讀去認識英文字母、單字、日常對話等知識，獲得更多的學習機會。</td>
+                        <td class="o-Intro">文具</td>
+                        <td class="o-btn"><button type="button" class="update-btn" onClick="location.href='Object-Update.html'">編輯</button></td>
+                        <td class="o-btn"><button type="button" class="delete-btn">刪除</button></td>
+                    </tr>
+                    <tr class="list">
+                        <th scope="row" class="o-id">2</th>
+                        <td class="o-Name">立式電扇</td>
+                        <td><input type="image" img src="images/電器_立式風扇.jpg" width="100" height="100" alt=""></td>
+                        <td class="o-Number">30台</td>
+                        <td class="o-type">在課業輔導教室使用的電扇，藉以在酷暑下讓教室降溫，提高學生讀書的專注度。</td>
+                        <td class="o-Intro">電器</td>
+                        <td class="o-btn"><button type="button" class="update-btn" onClick="location.href='Object-Update.html'">編輯</button></td>
+                        <td class="o-btn"><button type="button" class="delete-btn">刪除</button></td>
+                    </tr>
+                    <tr class="list">
+                        <th scope="row" class="o-id">3</th>
+                        <td class="o-Name">36色色鉛筆組</td>
+                        <td><input type="image" img src="images/文具_36色色鉛筆組.jpg" width="100" height="100" alt=""></td>
+                        <td class="o-Number">20組</td>
+                        <td class="o-type">提供精障者社區日間訓練美術繪圖團體使用，以提升學員繪畫技巧能力。</td>
+                        <td class="o-Intro">文具</td>
+                        <td class="o-btn"><button type="button" class="update-btn" onClick="location.href='Object-Update.html'">編輯</button></td>
+                        <td class="o-btn"><button type="button" class="delete-btn">刪除</button></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+      </section>
+  </body>
+</html>
